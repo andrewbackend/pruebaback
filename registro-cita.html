@@ -1,0 +1,22 @@
+<section>
+    <h2>Registro de Citas</h2>
+    <form id="form-cita">
+        <label for="nombre">Nombre del Paciente:</label>
+        <input type="text" id="nombre" required pattern="[A-Za-z\s]+">
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" required pattern="\d{8}">
+
+        <label for="fecha">Fecha de la Cita:</label>
+        <input type="date" id="fecha" required>
+
+        <label for="hora">Hora de la Cita:</label>
+        <input type="time" id="hora" required>
+
+        <label for="motivo">Motivo de la Cita:</label>
+        <textarea id="motivo" required></textarea>
+
+        <button type="button" onclick="registrarCita()">Registrar Cita</button>
+    </form>
+    <!-- <button onclick="imprimirCita()">Imprimir Cita en PDF</button> -->
+</section>
